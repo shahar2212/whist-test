@@ -5,7 +5,7 @@ import statsService from '../services/statsService';
 
 const Cart = () => {
     const { items, isEmpty, totalItems, /*totalUniqueItems,*/ cartTotal, updateItemQuantity, removeItem, emptyCart } = useCart();
-    if (isEmpty) return <btn to="/add-product"><button className="btn btn-primary mb-5" >Your Cart Is empty ):</button></btn>
+    if (isEmpty) return <btn to="/add-product"><button className="btn btn-primary mb-5" >Your cart is empty</button></btn>
 
 
 
