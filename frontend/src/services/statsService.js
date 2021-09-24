@@ -26,7 +26,6 @@ export function getSells() {
 
 }
 
-
 const ex = {
     uniqueCounter,
     regularCounter,
@@ -35,5 +34,4 @@ const ex = {
     sells,
     getSells
 }
-
 export default ex;

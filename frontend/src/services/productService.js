@@ -25,11 +25,6 @@ export function editProduct(product) {//edit the product
     return http.put(`${apiUrl}/admin/${productID}`, product)
 }
 
-
-
-
-
-
 const ex = {
     getAllProducts,
     addProducts,
@@ -37,5 +32,4 @@ const ex = {
     getProduct,
     editProduct,
 }
-
 export default ex;

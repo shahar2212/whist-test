@@ -39,8 +39,8 @@ router.get('/unique', async (req, res) => {
 router.post('/sells/:total', async (req, res) => {
     const { error } = validateSell(req.body);
     if (error) return res.status(400).send(error.details[0].message);
+    
     let sells = req.params.total;
-
     let today = new Date();
     let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 

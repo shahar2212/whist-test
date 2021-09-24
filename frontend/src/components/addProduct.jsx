@@ -3,7 +3,6 @@ import productService from '../services/productService';
 import Joi from "joi-browser";
 import Form from '../common/form';
 
-
 class AddProducts extends Form {
     state = {
         data: {

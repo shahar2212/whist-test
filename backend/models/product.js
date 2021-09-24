@@ -24,7 +24,7 @@ function validateProduct(product) {
 
         id: Joi.string(),
         title: Joi.string().min(2).max(255).required(),
-        price: Joi.number().min(1).max(9999).required(),
+        price: Joi.number().min(1).max(99999).required(),
         description: Joi.string().min(2).max(1024).required(),
         imageUrl: Joi.string().min(2).max(2024).required(),
         timesSold: Joi.number().default(0),

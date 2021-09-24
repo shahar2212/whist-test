@@ -3,6 +3,7 @@ import Product from './product';
 import { Link } from 'react-router-dom';
 import productService from '../services/productService';
 class Admin extends Component {
+
     state = {
         products: []
     }
@@ -18,9 +19,9 @@ class Admin extends Component {
         return (
             <React.Fragment>
                 <div className="container shadow bg-white rounded">
-                    <Link to="/add-product"><button className="btn btn-primary" >Add product</button></Link>
+                    <Link to="/add-product"><button className="btn btn-primary mt-5" >Add product</button></Link>
 
-                    <table className="table table-striped mt-5 wh-100">
+                    <table className="table table-striped mt-5 wh-100 mb-2">
                         <thead>
                             <tr>
                                 <th scope="col">Title</th>

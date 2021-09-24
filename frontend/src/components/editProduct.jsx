@@ -14,7 +14,7 @@ class EditProduct extends Form {
     schema = {
         _id: Joi.string(),
         title: Joi.string().min(2).max(255).required(),
-        price: Joi.string().min(1).max(10).required(),
+        price: Joi.number().min(1).max(99999).required(),
         description: Joi.string().min(2).max(1024).required(),
         imageUrl: Joi.string().min(2).max(2024).required(),
         cart: Joi.boolean().default(false)
@@ -47,7 +47,6 @@ class EditProduct extends Form {
         return (
             <React.Fragment>
                 <div className="container mt-5">
-
                     <form onSubmit={this.handleSubmit} method="POST">
                         {this.renderInput('title', 'Title', 'Title')}
                         {this.renderInput('price', 'Price', 'price')}
@@ -55,7 +54,6 @@ class EditProduct extends Form {
                         {this.renderInput('imageUrl', 'Image url', 'ImageUrl')}
                         {this.renderButton('Upload product')}
                     </form>
-
                 </div>
             </React.Fragment >
         );

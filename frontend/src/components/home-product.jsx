@@ -7,7 +7,6 @@ const HomeProduct = (props) => {
 
     return (
 
-
         <div className="col-lg-4 mt-3 mb-3" >
             <div className="col-13 ">
                 <div className="col-md-11">
@@ -34,8 +33,6 @@ const HomeProduct = (props) => {
                 </div>
             </div>
         </div>
-
     );
 }
-
 export default HomeProduct;

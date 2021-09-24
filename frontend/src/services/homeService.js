@@ -14,13 +14,9 @@ export function sold(productsID) {
     return http.put(`${apiUrl}/stats/${productsID.map(productID => productID + '/')}`)
 }
 
-
-
 const ex = {
     getProduct,
     getAllProducts,
     sold
-
 }
-
 export default ex;

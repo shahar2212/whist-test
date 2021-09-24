@@ -28,16 +28,12 @@ export function lastFourDate() {
     return YesterdayDate
 }
 
-
-
-
 const ex = {
     getTodayDate,
     getYesterdayDate,
     lastTwoDate,
     lastThreeDate,
     lastFourDate
-
 }
 
 export default ex;

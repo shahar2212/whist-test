@@ -7,5 +7,4 @@ const ex = {
     patch: axios.patch,
     delete: axios.delete
 }
-
 export default ex;

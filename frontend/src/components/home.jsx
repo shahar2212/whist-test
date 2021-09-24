@@ -21,7 +21,6 @@ class Home extends Component {
             <div className="container shadow p-3 mb-5 bg-white rounded">
                 <div className="row p-5 ">
                     <Cart />
-
                     {products.map((item, index) => {
                         return (
                             <HomeProduct
@@ -32,12 +31,10 @@ class Home extends Component {
                                 price={item.price}
                                 item={item}
                                 key={index}
-
                             />)
                     })}
                 </div>
             </div>
-
         );
     }
 }
